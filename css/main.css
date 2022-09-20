@@ -17,7 +17,6 @@ main{
     background: url(../images/bg-islam.jpg);
     width: 100vw;
     height: 100vh;
-    border: 1px solid red;
     background-size: cover;
     filter: grayscale(10%);
     overflow: visible;
@@ -40,6 +39,7 @@ main{
     align-items: center;
     width: 500px;
     padding-top: 25px;
+    cursor: pointer;
 }
 
 
@@ -60,15 +60,6 @@ main{
     justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
-
 .card{
     padding: 50px 20px;
     display: flex;
@@ -78,6 +69,7 @@ main{
     border-radius: 20px;
     background-color: rgba(144, 140, 140, 0.388);
     box-shadow: 0 0 6px #fff;
+    height: 300px;
 }
 
 .main__content{
@@ -106,105 +98,15 @@ main{
     color: orange;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Start Section style */
-
-.custom-select {
-    position: relative;
-    font-family: Arial;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element:*/
-  }
-  
-  .select-selected {
-    background-color: orange;
-    opacity:  .7;
-    border-radius: 30px;
-    
-  }
-  
-  /*style the arrow inside the select element:*/
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-  }
-  
-  /*point the arrow upwards when the select box is open (active):*/
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
-  
-  /*style the items (options), including the selected item:*/
-  .select-items div {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-    user-select: none;
+.form__section{
     color: #000;
-    height: 30px;
-    font-size: 14px;
-  }
-  .select-selected{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    font-size: 18px;padding-left: 20px;
-    cursor: pointer;
-  }
-  
-  /*style items (options):*/
-  .select-items {
-    position: absolute;
-    background-color: orange;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  
-  /*hide the items when the select box is closed:*/
-  .select-hide {
-    display: none;
-  }
-  
-  .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-/*End Section style */
+    border-radius: 20px;
+    padding: 7px 20px;    
+    border: orange 1px solid;
+    outline: none;
+}
+.form__section > option{
+    color: #000;
+
+}
+
