@@ -30,6 +30,7 @@ body {
     filter: grayscale(10%);
     overflow: visible;
     position: absolute;
+    scroll-behavior: none;
 }
 
 
@@ -251,6 +252,7 @@ body {
     }
 }
 
+`
 
 
 /* loader */

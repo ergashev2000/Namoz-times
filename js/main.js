@@ -5,7 +5,8 @@ let form = $('.form__section'),
     today = $('.today'),
     loce = $('.loce'),
     body = $('body'),
-    select = $('.select')
+    select = $('.select'),
+    btn = $('.message')
     ;
 
 
@@ -103,8 +104,3 @@ setInterval(() => {
 
 
 
-// Info
-
-function message() {
-    
-}
