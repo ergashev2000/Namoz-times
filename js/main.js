@@ -11,7 +11,6 @@ let form = $('.form__section'),
 async function regionSelect(result = "Toshkent") {
     const regions = await fetch(`https://islomapi.uz/api/present/day?region=${result}`);
     const resultCity = await regions.json();
-    console.log(resultCity);
 
     Object.values(resultCity.times).forEach((item, i) => {
         namazTime[i].innerHTML = `<span class = "time">${item}</span>`;
