@@ -3,26 +3,27 @@ let form = $('.form__section'),
     cards = $('.cards'),
     city = $('.cityLoc'),
     today = $('.today'),
-    loce = $('.loce')
+    loce = $('.loce'),
+    body = $('body'),
+    select = $('.select')
     ;
 
 
 // MINTAQALARNING MA'LUMOTINI OLISH 
-async function regionSelect(result = "Toshkent") {
+async function regionSelect(result) {
     const regions = await fetch(`https://islomapi.uz/api/present/day?region=${result}`);
     const resultCity = await regions.json();
-
+console.log(resultCity);
     Object.values(resultCity.times).forEach((item, i) => {
         namazTime[i].innerHTML = `<span class = "time">${item}</span>`;
     });
 };
-regionSelect()
-
 
 // MINTAQANI TANLASH
 function change() {
     form.addEventListener('change', (e) => {
         let mintaqa = e.target.value
+
         switch (mintaqa) {
             case 'Toshkent':
                 test = "Toshkent"
@@ -61,11 +62,24 @@ function change() {
                 test = "Guliston"
                 break;
         }
+
+        localStorage.setItem("user", test)
+        city.textContent = test;
         regionSelect(test)
-        city.textContent = mintaqa;
     })
 }
 change()
+regionSelect()
+
+function loadPage(){
+    let user = localStorage.getItem("user")
+    select.textContent = user;
+    city.textContent = localStorage.getItem("user");
+    regionSelect(user)
+}
+loadPage()
+
+
 
 
 // SELECTOR
@@ -79,10 +93,18 @@ renderRegions()
 
 // Data
 function data() {
-    const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const d = new Date();
     today.innerHTML = `${d.getDate()}-${monthNames[d.getMonth()]}  ${d.getFullYear()}-yil  <span class="timeNow">${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}</span> `
 }
 setInterval(() => {
     data()
 }, 500);
+
+
+
+// Info
+
+function message() {
+    
+}
