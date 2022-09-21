@@ -2,7 +2,8 @@ let form = $('.form__section'),
     namazTime = $a('.time'),
     cards = $('.cards'),
     city = $('.cityLoc'),
-    today = $('.today')
+    today = $('.today'),
+    loce = $('.loce')
     ;
 
 
@@ -81,8 +82,8 @@ renderRegions()
 function data() {
     const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
     const d = new Date();
-    today.innerHTML = `${d.getDate()}-${monthNames[d.getMonth()]}  ${d.getFullYear()}-yil     ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+    today.innerHTML = `${d.getDate()}-${monthNames[d.getMonth()]}  ${d.getFullYear()}-yil  <span class="timeNow">${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}</span> `
 }
-data()
-
-
+setInterval(() => {
+    data()
+}, 500);
