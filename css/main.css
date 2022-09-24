@@ -33,7 +33,7 @@ body {
   text-align: center;
 }
 .dark{
-    background-color: rgba(0, 0, 0, 0.428);
+    background-color: rgba(0, 0, 0, 0.687);
 }
 .sectionCity {
   display: flex;
@@ -256,14 +256,16 @@ tr {
   margin: 0 auto;
   padding: 10px 30px;
 }
-
+th{
+  background-color: #162d24;
+}
 .table__title {
   font-size: 30px;
   padding: 30px;
   text-align: center;
 }
 .bg-warning {
-  background-color: #008653;
+  background-color: #0de793;
 }
 
 /* Checkbox */
