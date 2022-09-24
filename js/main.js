@@ -27,7 +27,7 @@ async function regionSelectWeek(resultWeek) {
   let monthResultObj = JSON.stringify(monthResultJson);
   localStorage.setItem("month", monthResultObj);
   monthly(monthResultJson);
-  
+
   // Hafta
   let resultW = await weekRegions.json();
 
@@ -66,7 +66,7 @@ async function regionSelectWeek(resultWeek) {
 function monthly(ret) {
   const monthLoc = localStorage.getItem("month");
   const monthObjResult = JSON.parse(monthLoc);
-console.log(ret);
+  console.log(ret);
   months.innerHTML = "";
 
   monthObjResult.forEach((item, i) => {
@@ -87,7 +87,6 @@ console.log(ret);
     );
     console.log(item);
   });
-  
 }
 monthly();
 
@@ -155,7 +154,7 @@ function change() {
 change();
 regionSelect();
 regionSelectWeek();
-monthly()
+monthly();
 
 function loadPage() {
   let user = localStorage.getItem("user");
