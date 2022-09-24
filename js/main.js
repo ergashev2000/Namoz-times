@@ -225,8 +225,13 @@ toggle.addEventListener("click", () => {
 
 // LOADER//
 window.addEventListener('load', function () {
-  let loader2 = document.getElementById('main__load')
-  loader2.remove();
+  // alert("tayyor")
+  let mainLoad = document.querySelector('#main__load')
+  let load = document.querySelector('#load')
+  
+  mainLoad.classList.remove("loader");
+  load.classList.remove("lds-roller");
+
 })
 
 
