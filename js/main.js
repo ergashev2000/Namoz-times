@@ -41,11 +41,11 @@ async function regionSelectWeek(resultWeek) {
 
   dataW.forEach((el, i) => {
     const { tong_saharlik, quyosh, peshin, asr, shom_iftor, hufton } =
-      dataW[i].times;
-    const d = new Date().getDay();
+    dataW[i].times;
+    let d = new Date().getDay();
     createEl(
       "tr",
-      `${(d === i+1) ? "bg-warning tr" : "tr"}`,
+      `${(d === (i+1) || i === 6) ? "bg-warning tr" : "tr"}`,
       `
                             <td>${el.region}</td>
                             <td>${el.date.substring(0, 10)}</td>
@@ -70,7 +70,7 @@ function monthly(ret) {
   monthObjResult.forEach((item, i) => {
     createEl(
       "tr",
-      `${(d === i+1) ? "bg-warning tr" : "tr"}`,
+      `${(d === i) ? "bg-warning tr" : "tr"}`,
       `
                             <td>${item.region}</td>
                             <td>${item.date.substring(0, 10)}</td>
