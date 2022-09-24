@@ -65,7 +65,6 @@ async function regionSelectWeek(resultWeek) {
 function monthly(ret) {
   const monthLoc = localStorage.getItem("month");
   const monthObjResult = JSON.parse(monthLoc);
-  console.log(ret);
   months.innerHTML = "";
   const d = new Date().getUTCDate();
   monthObjResult.forEach((item, i) => {
@@ -84,7 +83,6 @@ function monthly(ret) {
                             `,
       months
     );
-    console.log(item);
   });
 }
 monthly();
