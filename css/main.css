@@ -134,6 +134,7 @@ body {
   .cards {
     gap: 10px !important;
     grid-template-columns: repeat(3, 1fr);
+    padding: -1 10px;
   }
 
   body {
@@ -189,8 +190,7 @@ body {
     background-color: #0b422d;
     border-radius: 20px;
     margin: 0 20px 20px 20px;
-    padding: 0 10px;
-    width: 300px;
+    padding: 10px 20px;
   }
 
   .info,
