@@ -232,6 +232,8 @@ window.addEventListener('load', function () {
   mainLoad.classList.remove("loader");
   load.classList.remove("lds-roller");
 
+  $('body').style.overflow = 'visible'
+
 })
 
 
