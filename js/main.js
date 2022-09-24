@@ -219,3 +219,14 @@ toggle.addEventListener("click", () => {
     window.localStorage.setItem("theme", "light");
   } else window.localStorage.setItem("theme", "dark");
 });
+
+
+
+
+// LOADER//
+window.addEventListener('load', function () {
+  let loader2 = document.getElementById('main__load')
+  loader2.remove();
+})
+
+
