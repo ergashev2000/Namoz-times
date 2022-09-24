@@ -9,6 +9,8 @@
 
     <link rel="icon" type="icon" href="./images/1733_U1RVRElPIEtBVCA0MTAtMjY.jpg">
 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -16,12 +18,16 @@
     <!-- <div class="lds-ripple"><div></div><div></div></div> -->
     <main>
         <section>
-            <div class="loce">
+            <div class="loce ">
                 <h2 class="title">Namoz vaqtlari</h2>
+                <label class="switch">
+                    <input type="checkbox" class="checkbox">
+                    <span class="slider round"></span>
+                </label>
             </div>
-            <div class="container">
+
+            <div class="container ">
                 <div class="main__content">
-                    <span class="line"></span>
                     <div class="test">
                         <div class="sectionCity">
                             <h3>Hududni tanlang:</h3>
@@ -72,6 +78,55 @@
                             <div class="time"></div>
                         </div>
                     </div>
+
+
+
+                    <h3 class="table__title">Haftalik Namoz Vaqtlari</h3>
+                    <div class="table__main">
+                        <table class="  table">
+                            <thead>
+                                <tr>
+                                    <th>Mintaqa</th>
+                                    <th>Sana</th>
+                                    <th>Bomdod</th>
+                                    <th>Quyosh</th>
+                                    <th>Peshin</th>
+                                    <th>Asr</th>
+                                    <th>Shom</th>
+                                    <th>Hufton</th>
+                                </tr>
+                            </thead>
+                            <tbody id="week">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                    
+                    <h3 class="table__title">Oylik Namoz Vaqtlari</h3>
+                    <div class="table__main">
+                        <table class="  table">
+                            <thead>
+                                <tr>
+                                    <th>Mintaqa</th>
+                                    <th>Sana</th>
+                                    <th>Bomdod</th>
+                                    <th>Quyosh</th>
+                                    <th>Peshin</th>
+                                    <th>Asr</th>
+                                    <th>Shom</th>
+                                    <th>Hufton</th>
+                                </tr>
+                            </thead>
+                            <tbody id="month">
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
                 </div>
             </div>
         </section>
