@@ -269,12 +269,13 @@ tr {
 /* Checkbox */
 
 .switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  width: 60px;
+  width: 65px;
   height: 34px;
-  top: 30px;
-  right: 50px;
+  top: 50%;
+  right: 0px;
+  transform: translate(-50%, -50%);
 }
 
 .switch input {
@@ -328,6 +329,7 @@ input:checked + .slider:before {
 .loce {
   display: flex;
   width: 100%;
+  position: relative;
 }
 .slider.round {
   border-radius: 34px;
