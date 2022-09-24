@@ -188,9 +188,11 @@ body {
   .test {
     background-color: #0b422d;
     border-radius: 20px;
-    margin: 0 20px 20px 20px;
-    padding: 0 10px;
-    width: 300px;
+    /* margin: 0 20px 20px 20px; */
+    padding: 0 40px;
+    width: 100%;
+    margin: 20px auto;
+    
   }
 
   .info,
@@ -254,13 +256,17 @@ tr {
   border: 1px solid #fff;
   border-collapse: collapse;
   margin: 0 auto;
-  padding: 10px 30px;
+  padding: 10px 4px;
+  text-align: center;
 }
 
 .table__title {
   font-size: 30px;
   padding: 30px;
   text-align: center;
+}
+.table{
+  width: 100%;
 }
 .bg-warning {
   background-color: #008653;
@@ -271,7 +277,7 @@ tr {
 .switch {
   position: absolute;
   display: inline-block;
-  width: 65px;
+  width: 62px;
   height: 34px;
   top: 50%;
   right: 0px;
