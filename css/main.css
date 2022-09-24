@@ -275,7 +275,6 @@ tr {
   height: 34px;
   top: 30px;
   right: 50px;
-  z-index: -99;
 }
 
 .switch input {
@@ -431,7 +430,7 @@ input:checked + .slider:before {
 }
 
 .lds-roller{
-  position: relative;
+  /* position: absolute; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -443,4 +442,5 @@ input:checked + .slider:before {
   height: 100vh;
   scroll-behavior: smooth;
   position: absolute;
+  z-index: 99999;
 }
