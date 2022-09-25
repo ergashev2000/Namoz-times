@@ -70,7 +70,7 @@ function monthly(ret) {
   monthObjResult.forEach((item, i) => {
     createEl(
       "tr",
-      `${(d === i) ? "bg-warning tr" : "tr"}`,
+      `${(d === i+1) ? "bg-warning tr" : "tr"}`,
       `
                             <td>${item.region}</td>
                             <td>${item.date.substring(0, 10)}</td>
